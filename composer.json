@@ -1,0 +1,69 @@
+{
+    "name": "sikessem/console",
+    "description": "The Sikessem console allows you to develop and test command line applications.",
+    "homepage": "https://packagist.org/packages/sikessem/console",
+    "keywords": [
+        "sikessem",
+        "php",
+        "console",
+        "cli",
+        "termwind",
+        "command-line",
+        "console-application"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "SIGUI Kessé Emmanuel",
+            "email": "contact@sigui.ci",
+            "homepage": "https://sigui.ci"
+        }
+    ],
+    "support": {
+        "email": "support@sikessem.com",
+        "source": "https://github.com/sikessem/console",
+        "issues": "https://github.com/sikessem/console/issues",
+        "chat": "https://github.com/orgs/sikessem/discussions"
+    },
+    "require": {
+        "php": "^8.1||^8.2",
+        "nunomaduro/termwind": "^1.15",
+        "symfony/process": "^6.3"
+    },
+    "require-dev": {
+        "sikessem/devtools": "^0.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Sikessem\\Console\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Sikessem\\Console\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "lint": "pint -v",
+        "test": "pest --colors=always",
+        "ci": [
+            "@lint",
+            "@test"
+        ]
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-main": "0.x-dev"
+        }
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
