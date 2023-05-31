@@ -40,7 +40,7 @@ jobs:
       run: composer update --${{ matrix.dependency-version }} --no-interaction --prefer-dist
 
     - name: Check code lint
-      run: composer lint
+      run: composer check
 
     - name: Test code units
       run: composer test

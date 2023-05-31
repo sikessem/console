@@ -45,9 +45,10 @@
     },
     "scripts": {
         "lint": "pint -v",
+        "check": "pint --test -v",
         "test": "pest --colors=always",
         "ci": [
-            "@lint",
+            "@check",
             "@test"
         ]
     },
