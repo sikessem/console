@@ -78,7 +78,7 @@ Install [Console](https://packagist.org/packages/sikessem/console) using [Compos
     ```json
     {
         "require" : {
-            "sikessem/console": "^0.0"
+            "sikessem/console": "^0.1"
         }
     }
     ```
